@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Home } from "./pages";
-// import { CursorAnimation, Loader } from "./components";
+import CursorAnimation from "./components/CursorAnimation/CursorAnimation"
+import Loader from "./components/Loader/Loader";
 import "./App.scss";
 
 function App() {
@@ -26,9 +27,14 @@ function App() {
 
   return (
     <main className="main">
+      {isLoading ? (
+        <Loader />
+      ) : (
         <>
+          {isDesktop && <CursorAnimation />}
           <Home />
         </>
+      )}
     </main>
   );
 }
