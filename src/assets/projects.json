@@ -1,0 +1,58 @@
+[
+  {
+    "imageSrc": "/images/Answer.png",
+    "name": "PDFAnswerBot | Developed a chatbot application designed to intelligently search and extract documents using Flask, Python, Ollama, ChromaDB, Neo4j, Cypher, Streamlit, Llama-Index",
+    "description": [
+      "Intelligent Querying: Implemented accurate question-answering based on the content of uploaded documents.",
+      "Persistent Storage: Stored document embeddings for quick and efficient retrieval.",
+      "Local Processing: Ensured privacy and security by processing documents locally without the need for internet access.",
+      "GraphDB: Enhanced querying by integrating a graph database (Neo4j) for better performance compared to vector databases"
+    ],
+    "skills": [
+      {
+        "name": "Github",
+        "link": "https://github.com/Potafe/PDF-AnswerBot"
+      }
+    ],
+    "link": "https://github.com/Potafe/PDF-AnswerBot"
+  },
+  {
+    "imageSrc": "/images/First_Page.png",
+    "name": "Mingle | Developed a social networking platform made in React, Express, Node.js, MongoDB, Cloudinary, Tailwind, Javascript",
+    "description": [
+      "User Authentication: Secure login and sign-up using PassportJS and bcryptjs.",
+      "Messaging System: Real-time text messaging and image sharing with Cloudinary for media storage.",
+      "Group Management: Enabled group creation, global chat, and user connection functionality.",
+      "Account Management: Comprehensive settings for profile management and user interactions."
+    ],
+    "skills": [
+      {
+        "name": "Go",
+        "link": "https://mingle-frontend-vse9-i37hi1a36-potafes-projects.vercel.app"
+      },
+      {
+        "name": "Github",
+        "link": "https://github.com/Potafe/Mingle-Frontend"
+      }
+    ],
+    "link": "https://github.com/Potafe/Mingle-Frontend"
+  },
+  {
+    "imageSrc": "/images/quick_store.png",
+    "name": "QuickStore | A cloud storage web application made in Javascript, Express.js, PostgreSQL, PrismaORM",
+    "description": [
+      "User Authentication: Implemented secure sign-up and login functionality.",
+      "Cloud Storage: Supported file uploads with options for renaming and deleting folders.",
+      "File Management: Enabled users to download and delete files, view file details, and search through stored files.",
+      "Tech Stack: Built using Express.js, EJS templates with TailwindCSS for design, and PostgreSQL with PrismaORM for database management"
+    ],
+    "skills": [
+      {
+        "name": "Github",
+        "link": "https://github.com/Potafe/QuickStore"
+      }
+    ],
+    "link": "https://github.com/Potafe/QuickStore"
+  }
+  
+]

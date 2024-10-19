@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import useRefs from "../../global/hooks/useRefs"
 import Experience from "../../components/Experience/Experience"
-
+import Project from "../../components/Project/Project"
 
 import styles from "./Home.module.scss";
 
@@ -81,6 +81,7 @@ const Home = () => {
     <div className={styles["home"]} onMouseMove={handleMouseMove}>
       <section className={styles["right"]}>
         <Experience ref={refObj[1]} />
+        <Project ref={refObj[2]} />
       </section>
     </div>
   );

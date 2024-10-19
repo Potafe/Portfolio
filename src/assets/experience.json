@@ -6,7 +6,7 @@
       "position": "Software Development Engineer Intern",
       "keyPoints": [
         "Utilized TensorFlow and PyTorch for developing and training models.",
-        "Focused on identifying unusual patterns in hyperspectral data, used CNN + Encoder-Decoder archite",
+        "Focused on identifying unusual patterns in hyperspectral data, used CNN + Encoder-Decoder architecture",
         "Leveraged QGIS for geospatial analysis and visualization of hyperspectral data.",
         "Created a question-answering bot that functioned offline, addressing security and operational requirements.",
         "Used LlamaIndex and Ollama (based on LLaMA models) to power the Q&A system.",
