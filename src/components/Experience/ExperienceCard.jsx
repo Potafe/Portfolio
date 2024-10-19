@@ -8,6 +8,7 @@ const ExperienceCard = ({
   skills,
   startDate,
   link,
+  imgSrc
 }) => {
   return (
     <a
@@ -49,6 +50,7 @@ const ExperienceCard = ({
                 })}
           </span>
         </p>
+        <img src={imgSrc} alt={company} className={styles["company-logo"]} />
       </div>
       <div className={styles["right"]}>
         <p className={styles["experience"]}>

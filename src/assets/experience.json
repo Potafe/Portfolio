@@ -26,7 +26,8 @@
         "Ollama",
         "QGIS"
       ],
-      "link": "https://ntro.gov.in/ntroWeb/loadRecruitmentsHome.do"
+      "link": "https://ntro.gov.in/ntroWeb/loadRecruitmentsHome.do",
+      "imgSrc": "/images/logo.jpg"
     }
   ]
   

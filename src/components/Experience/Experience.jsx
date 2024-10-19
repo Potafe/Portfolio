@@ -20,6 +20,7 @@ const Experience = (
           keyPoints={e.keyPoints}
           skills={e.skills}
           key={idx}
+          imgSrc={e.imgSrc}
         />
       ))}
     </article>

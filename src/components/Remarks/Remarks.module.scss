@@ -1,0 +1,22 @@
+.remarks {
+  width: 90%;
+  margin: auto;
+  padding: 3vw 5vw;
+  color: var(--quaternary-100);
+  font-size: 1vw;
+  opacity: 0.5;
+  user-select: none;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .remarks {
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 640px) {
+  .remarks {
+    font-size: 2.5vw;
+  }
+}

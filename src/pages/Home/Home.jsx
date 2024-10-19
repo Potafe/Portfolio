@@ -2,19 +2,23 @@ import { useState, useRef, useEffect } from "react";
 import useRefs from "../../global/hooks/useRefs"
 import Experience from "../../components/Experience/Experience"
 import Project from "../../components/Project/Project"
+import Footer from "../../components/Footer/Footer"
+import Navigation from "../../components/Navigation/Navigation";
+import Remarks from "../../components/Remarks/Remarks"
+import About from "../../components/About/About"
+
 
 import styles from "./Home.module.scss";
 
 const nameData = [
-  { content: "P", hoverContent: "c" },
-  { content: "r", hoverContent: "o" },
-  { content: "a", hoverContent: "d" },
-  { content: "t", hoverContent: "a" },
-  { content: "i", hoverContent: "d" },
-  { content: "k", hoverContent: "e" },
-  { content: String.fromCharCode(0xa0), hoverContent: "p" },
-  { content: "M", hoverContent: "t" },
-  { content: ".", hoverContent: "." },
+  { content: "Y", hoverContent: "P" },
+  { content: "a", hoverContent: "o" },
+  { content: "z", hoverContent: "t" },
+  { content: "a", hoverContent: "a" },
+  { content: "t", hoverContent: "f" },
+  { content: String.fromCharCode(0xa0), hoverContent: "" },
+  { content: "M", hoverContent: "e" },
+  { content: ".", hoverContent: "" },
 ];
 
 const Home = () => {
@@ -79,9 +83,39 @@ const Home = () => {
 
   return (
     <div className={styles["home"]} onMouseMove={handleMouseMove}>
+      <section className={styles["left"]}>
+        <Navigation
+          imgSrc="/images/self.png"
+          nav={["About", "Experience", "Projects"]}
+          refObj={refObj}
+        />
+        <div className={styles["name"]}>
+          <h1>
+            <a
+              href="https://drive.google.com/file/d/1CTVKr0At_HoQuFQO-MWWArkXA3BaKOG3/view?usp=drive_link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {nameData.map((n, idx) => (
+                <span
+                  className={isFlipped[idx] ? styles["flip"] : ""}
+                  data-content={n.content}
+                  data-hover-content={n.hoverContent}
+                  ref={(element) => (lettersRef.current[idx] = element)}
+                  key={idx}
+                ></span>
+              ))}
+            </a>
+          </h1>
+          <h4>Software Developer</h4>
+        </div>
+        <Footer />
+      </section>
       <section className={styles["right"]}>
+        <About ref={refObj[0]} />
         <Experience ref={refObj[1]} />
         <Project ref={refObj[2]} />
+        <Remarks />
       </section>
     </div>
   );

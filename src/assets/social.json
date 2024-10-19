@@ -1,0 +1,17 @@
+[
+  {
+    "link": "https://www.github.com/Potafe",
+    "icon": "github.svg",
+    "name": "Github"
+  },
+  {
+    "link": "https://www.linkedin.com/in/yazat-mishra-14a378246/",
+    "icon": "linkedin.svg",
+    "name": "LinkedIn"
+  },
+  {
+    "link": "mailto:yazat.mishra1@gmail.com",
+    "icon": "email.svg",
+    "name": "Email"
+  }
+]
