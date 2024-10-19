@@ -1,0 +1,30 @@
+.exp {
+    width: 100%;
+    padding: 3vw 5vw;
+    color: var(--quaternary-100);
+    font-size: 1vw;
+  
+    h1 {
+      color: var(--secondary-100);
+      font-size: 2vw;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .exp {
+      font-size: 1.5vw;
+      h1 {
+        font-size: 3vw;
+      }
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .exp {
+      font-size: 3vw;
+      h1 {
+        font-size: 5vw;
+      }
+    }
+  }
+  
