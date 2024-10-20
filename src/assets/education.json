@@ -1,0 +1,29 @@
+[
+    {
+        "startDate": "06/10/2024",
+        "endDate": "present",
+        "school": "NIT Mizoram",
+        "degree": "B.Tech in Electronics and Communication",
+        "CGPA": "9.52",
+        "link": "https://nitmz.ac.in",
+        "imgSrc": "/images/insti_logo.png",
+        "keyPoints": [
+            "Placement Coordinator",
+            "Participated in coding competitions and hackathons",
+            "Co-ordinated in cultural and technical events like Anunaad (Yearly Fest pf NIT Mizoram)"
+        ]
+    },
+    {
+        "startDate": "03/01/2020",
+        "endDate": "03/01/2021",
+        "school": "Amity International School",
+        "degree": "HSC",
+        "CGPA": "96%",
+        "link": "https://amityglobalschoolnoida.com/",
+        "imgSrc": "/images/school.png",
+        "keyPoints": [
+            "Topped in a class of 40 students",
+            "Overall Rank 9 at school"
+        ]
+    }
+]

@@ -1,6 +1,6 @@
 [
   {
-    "imageSrc": "/images/Answer.png",
+    "imageSrc": "/images/graph.png",
     "name": "PDFAnswerBot | Developed a chatbot application designed to intelligently search and extract documents using Flask, Python, Ollama, ChromaDB, Neo4j, Cypher, Streamlit, Llama-Index",
     "description": [
       "Intelligent Querying: Implemented accurate question-answering based on the content of uploaded documents.",

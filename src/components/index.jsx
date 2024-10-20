@@ -9,6 +9,7 @@ import ProjectCard from "./Project/ProjectCard";
 import Link from "./Link/Link";
 import Remarks from "./Remarks/Remarks";
 import Loader from "./Loader/Loader";
+import Education from "./Education/Education"
 
 export {
   CursorAnimation,
@@ -22,4 +23,5 @@ export {
   Link,
   Remarks,
   Loader,
+  Education
 };

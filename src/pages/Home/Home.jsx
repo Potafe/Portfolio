@@ -6,7 +6,7 @@ import Footer from "../../components/Footer/Footer"
 import Navigation from "../../components/Navigation/Navigation";
 import Remarks from "../../components/Remarks/Remarks"
 import About from "../../components/About/About"
-
+import Education from "../../components/Education/Education";
 
 import styles from "./Home.module.scss";
 
@@ -86,7 +86,7 @@ const Home = () => {
       <section className={styles["left"]}>
         <Navigation
           imgSrc="/images/self.png"
-          nav={["About", "Experience", "Projects"]}
+          nav={["About", "Education", "Experience", "Projects"]}
           refObj={refObj}
         />
         <div className={styles["name"]}>
@@ -113,8 +113,9 @@ const Home = () => {
       </section>
       <section className={styles["right"]}>
         <About ref={refObj[0]} />
-        <Experience ref={refObj[1]} />
-        <Project ref={refObj[2]} />
+        <Education ref = {refObj[1]} />
+        <Experience ref={refObj[2]} />
+        <Project ref={refObj[3]} />
         <Remarks />
       </section>
     </div>
