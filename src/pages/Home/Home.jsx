@@ -82,7 +82,7 @@ const Home = () => {
         <div className={styles["name"]}>
           <h1>
             <a
-              href="https://drive.google.com/file/d/1p87bQepGcU3bncvxb6eILXqPNUKq4-OU/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1agorJmzEb8ncMrJ1nq8hGvcZpEirSoca/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
             >
