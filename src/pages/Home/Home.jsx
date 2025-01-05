@@ -16,14 +16,16 @@ const nameData = [
   { content: "z", hoverContent: "t" },
   { content: "a", hoverContent: "a" },
   { content: "t", hoverContent: "f" },
-  { content: String.fromCharCode(0xa0), hoverContent: "" },
-  { content: "M", hoverContent: "e" },
+  { content: String.fromCharCode(0xa0), hoverContent: "e" },
+  { content: "M", hoverContent: "" },
   { content: ".", hoverContent: "" },
 ];
 
 const Home = () => {
   const [letterCenter, setLetterCenter] = useState([]);
   const [isFlipped, setIsFlipped] = useState(Array(nameData.length).fill(false));
+  const [isNameHovered, setIsNameHovered] = useState(false);
+  const [titleColorToggle, setTitleColorToggle] = useState(false);
   const lettersRef = useRef([]);
   const refObj = useRefs(3);
 
@@ -65,26 +67,46 @@ const Home = () => {
     [calculateLetterFlip]
   );
 
+  const handleNameHover = (isHovered) => {
+    setIsNameHovered(isHovered);
+    if (isHovered) {
+      setIsFlipped(Array(nameData.length).fill(true));
+    } else {
+      setIsFlipped(Array(nameData.length).fill(false));
+    }
+  };
+
   useEffect(() => {
     if (lettersRef.current.length > 0 && letterCenter.length === 0) {
       calculateLetterCenter();
     }
   }, [lettersRef, calculateLetterCenter]);
 
+  // Effect for color toggle
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTitleColorToggle(prev => !prev);
+    }, 1300);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className={styles["home"]} onMouseMove={handleMouseMove}>
       <section className={styles["left"]}>
         <Navigation
-          imgSrc="/images/self.png"
+          imgSrc={isNameHovered ? "/images/DP.avif" : "/images/self.png"}
           nav={["About", "Education", "Experience", "Projects"]}
           refObj={refObj}
         />
         <div className={styles["name"]}>
           <h1>
             <a
-              href="https://drive.google.com/file/d/1BpSdTS12X_z0_hPsNjEb4jy4v07TUYGp/view?usp=sharing"
+              href="https://drive.google.com/file/d/1db5N-B6WqmxFBWW7Ai0ghH5O0xTSh-p-/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
+              onMouseEnter={() => handleNameHover(true)}
+              onMouseLeave={() => handleNameHover(false)}
             >
               {nameData.map((n, idx) => (
                 <span
@@ -97,7 +119,9 @@ const Home = () => {
               ))}
             </a>
           </h1>
-          <h4>Software Developer</h4>
+          <h4 className={`${styles["title"]} ${titleColorToggle ? styles["alt-color"] : ""}`}>
+            Software Developer
+          </h4>
         </div>
         <Footer />
       </section>

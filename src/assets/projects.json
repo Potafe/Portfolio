@@ -1,20 +1,20 @@
 [
   {
     "imageSrc": "/images/graph.png",
-    "name": "PDFAnswerBot | Developed a chatbot application designed to intelligently search and extract documents using Flask, Python, Ollama, ChromaDB, Neo4j, Cypher, Streamlit, Llama-Index",
+    "name": "RAG_Ollama | Developed a dockerized chatbot application designed to intelligently search and extract documents using Python, Ollama, Neo4j, Docker, Cypher, Streamlit, Llangchain",
     "description": [
-      "Intelligent Querying: Implemented accurate question-answering based on the content of uploaded documents.",
-      "Persistent Storage: Stored document embeddings for quick and efficient retrieval.",
-      "Local Processing: Ensured privacy and security by processing documents locally without the need for internet access.",
-      "GraphDB: Enhanced querying by integrating a graph database (Neo4j) for better performance compared to vector databases"
+      "Built a containerized RAG-based chatbot system using Neo4j as vector and graph store and Ollama for local LLM inference",
+      "Implemented automatic data ingestion pipeline and real-time response generation with streaming support",
+      "Created educational codebase demonstrating core LangChain concepts including chunking, embeddings, retrieval, and prompt engineering",
+      "Enhanced querying by integrating a graph database (Neo4j KG's) for better performance compared to vector databases"
     ],
     "skills": [
       {
         "name": "Github",
-        "link": "https://github.com/Potafe/PDF-AnswerBot"
+        "link": "https://github.com/Potafe/RAG_Ollama"
       }
     ],
-    "link": "https://github.com/Potafe/PDF-AnswerBot"
+    "link": "https://github.com/Potafe/RAG_Ollama"
   },
   {
     "imageSrc": "/images/First_Page.png",
